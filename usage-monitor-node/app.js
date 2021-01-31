@@ -16,4 +16,4 @@ app.set('view engine', 'ejs');
 
 // making api endpoint visible to app.js
 apiController(app);
-app.listen(port);
+app.listen(port, () => console.log(`Server has been started on ${port} port`));
